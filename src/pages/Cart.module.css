@@ -1,0 +1,103 @@
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.cartTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1rem;
+}
+
+.cartTable th,
+.cartTable td {
+  border: 1px solid #ccc;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.quantityInput {
+  width: 50px;
+  text-align: center;
+  padding: 0.2rem;
+}
+
+.removeButton {
+  background-color: #e00;
+  border: none;
+  color: white;
+  padding: 0.3rem 0.6rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.removeButton:hover {
+  background-color: #a00;
+}
+
+.total {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  text-align: right;
+}
+
+
+.clearButton {
+  background-color: #0070f3;
+  border: none;
+  color: white;
+  padding: 0.6rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  float: right;
+  transition: background-color 0.2s ease;
+}
+
+
+.clearButton:hover {
+  background-color: #005bb5;
+}
+/* По умолчанию (десктоп) */
+.cartTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.cartTable th, .cartTable td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+/* Адаптив для мобильных */
+@media (max-width: 600px) {
+  .cartTable {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  .quantityInput {
+    width: 50px;
+  }
+
+  .removeButton, .clearButton {
+    font-size: 14px;
+    padding: 6px 10px;
+  }
+}
+.cartTable {
+  width: 100%;
+  border-collapse: collapse;
+  overflow-x: auto;
+  display: block;
+}
+
+@media (max-width: 480px) {
+  .cartTable {
+    display: block;
+    overflow-x: auto; 
+  }
+}
